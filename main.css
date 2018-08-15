@@ -1,12 +1,17 @@
 
 body{
-    
+ 
+font-family: 'Courier New', Courier, monospace;   
 }   
+<<<<<<< HEAD
  
 
 p{
 font-family: 'Courier New', Courier, monospace;
 }
+=======
+   
+>>>>>>> 53ace77c61288e25cf48ac895dff6f7c9f445902
 .container{
     display: grid;
     grid-template-columns: 1fr 75% ;
@@ -24,7 +29,11 @@ font-family: 'Courier New', Courier, monospace;
     justify-content: center;
     align-content: center;
     color: white;
+<<<<<<< HEAD
     font-size: 25px;
+=======
+    font-size: 40px;
+>>>>>>> 53ace77c61288e25cf48ac895dff6f7c9f445902
     background: linear-gradient(to right, black , rgb(61, 61, 60));
 }   
     
