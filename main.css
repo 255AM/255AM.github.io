@@ -8,11 +8,12 @@ font-family: 'Courier New', Courier, monospace;
 
 
 .container{
-    
-    display:grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "item1 item1 item3"   
-    "item2 item2 item3"
+    "item1 item3 item3 item3"   
+    "item2 item3 item3 item3";
 }
 
 
@@ -51,5 +52,5 @@ font-family: 'Courier New', Courier, monospace;
    grid-area: item3;
    display: grid;
    overflow: hidden;
-   min-width: 1300px;
+   
 }
