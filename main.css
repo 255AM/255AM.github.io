@@ -2,11 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
+    }
+
 body{
     font-family: 'Courier New', Courier, monospace; 
     margin: 0;  
-}   
+    }      
  
 .wrapper{
     display: grid;
@@ -16,7 +17,7 @@ body{
     z-index: 1;
     height: 100vh;
     width: 100vw;
-}
+    }
 
 .name{
     display: flex;
@@ -24,7 +25,7 @@ body{
     grid-row-start: 1;
     justify-content: center;
     align-items:center;      
-}   
+    }   
     
 .info{
     display: flex;
@@ -34,14 +35,13 @@ body{
     align-items:center;
     text-align: center;
     font-size: 1.3rem;
+    }
 
-}
 .contact{
     grid-column-start: 1;
     grid-row-start: 3;
     z-index: 1;
-}
-
+    }
 
 .button{
     writing-mode: vertical-rl;
@@ -55,7 +55,6 @@ body{
    z-index: -1;
    max-width: 100%;
    max-height: 100%;
-   
    } 
    
 .message {
@@ -70,7 +69,6 @@ body{
     transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
     overflow: hidden;
     box-sizing: border-box;
-      
     }
 
 #toggle {
@@ -79,8 +77,8 @@ body{
     cursor:pointer;
     left:-100%;
     top:-100%;
-        
     }
+
 #toggle + label {
     position:absolute;
     cursor:pointer;
@@ -97,7 +95,7 @@ body{
     cursor: pointer;
     margin:20px 50px;
     transition:all 500ms ease;
-      }
+    }
 
 #toggle + label:after {
     content:"Open" 
@@ -106,34 +104,28 @@ body{
 .container {
     grid-area: 1 -1;
     transition: (grid-gap) 1 linear 200px;
-    
-      }
+    }
       
 #toggle:checked ~ .message {
     top: 0;
-      }
+    }
       
 #toggle:checked ~ .container {
     margin-top: 250px;
-      }
+    }
       
 #toggle:checked + label {
     background:#dd6149;
-      }
+    }
       
 #toggle:checked + label:after {
     content:"Close"
-      }
+    }
 
 input:checked ~ .message{
     color: purple;
-}
+    }
 
-
-
-
-
-    
 
 
 @media only screen and (max-width: 600px){
@@ -186,7 +178,7 @@ input:checked ~ .message{
         padding: 0;
         align-content: flex-start;
         justify-content: center;
-
     }
 
-}
+    }
+    }
